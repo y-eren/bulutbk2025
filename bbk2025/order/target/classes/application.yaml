@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/atlas
+    username: atlas
+    password: atlas
+  jpa:
+    hibernate.ddl-auto: create
+  rabbitmq:
+    host: localhost
+    port: 5672
+management:
+  endpoints:
+    web.exposure.include: health,info,prometheus
+server:
+  port: 8080
